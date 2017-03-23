@@ -1,1 +1,32 @@
-test123
+<!doctype html>
+<html>
+
+<head>
+    <script>
+        (function() {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect != location.href) {
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+
+    <base href="/">
+    <meta charset="utf-8">
+    <title>BlinkID / Dashboard</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+    <link rel="icon"
+        type="image/x-icon"
+        href="favicon.ico">
+<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
+
+<body>
+    <app-root>Loading...</app-root>
+<script type="text/javascript" src="inline.e6f5b6d99d744c69be03.bundle.js"></script><script type="text/javascript" src="polyfills.f52c146b4f7d1751829e.bundle.js"></script><script type="text/javascript" src="vendor.41a19d2a9b71693ab1a9.bundle.js"></script><script type="text/javascript" src="main.210c92b65bc1da886447.bundle.js"></script></body>
+
+</html>
